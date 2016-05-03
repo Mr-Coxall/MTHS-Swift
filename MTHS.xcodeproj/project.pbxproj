@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		048613501CD82F06004C6D6F /* client_387298564538-597auvuhbatu7umcqmka514tme1qf4ul.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_387298564538-597auvuhbatu7umcqmka514tme1qf4ul.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		048613531CD830E3004C6D6F /* MTHS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTHS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		04FC193F1CD82C4000B3A1D9 /* MTHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FC19421CD82C4000B3A1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FC19451CD82C4000B3A1D9 /* MTHS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTHS.xcdatamodel; sourceTree = "<group>"; };
@@ -50,8 +51,16 @@
 			isa = PBXGroup;
 			children = (
 				048613501CD82F06004C6D6F /* client_387298564538-597auvuhbatu7umcqmka514tme1qf4ul.apps.googleusercontent.com.plist */,
+				048613521CD830AE004C6D6F /* TempFiles */,
 			);
 			name = GoogleSigninFiles;
+			sourceTree = "<group>";
+		};
+		048613521CD830AE004C6D6F /* TempFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TempFiles;
 			sourceTree = "<group>";
 		};
 		04FC19361CD82C3F00B3A1D9 = {
@@ -76,6 +85,7 @@
 		04FC19411CD82C4000B3A1D9 /* MTHS */ = {
 			isa = PBXGroup;
 			children = (
+				048613531CD830E3004C6D6F /* MTHS-Bridging-Header.h */,
 				04FC19421CD82C4000B3A1D9 /* AppDelegate.swift */,
 				04FC19471CD82C4000B3A1D9 /* MasterViewController.swift */,
 				04FC19491CD82C4000B3A1D9 /* DetailViewController.swift */,
@@ -347,10 +357,13 @@
 			baseConfigurationReference = 53F96AEAE1CF69C45B41E24E /* Pods-MTHS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MTHS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.coxall.MTHS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MTHS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -359,10 +372,12 @@
 			baseConfigurationReference = 6943D24B7A4D96F53681E345 /* Pods-MTHS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MTHS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.coxall.MTHS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MTHS-Bridging-Header.h";
 			};
 			name = Release;
 		};
