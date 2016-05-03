@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		048613511CD82F06004C6D6F /* client_387298564538-597auvuhbatu7umcqmka514tme1qf4ul.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048613501CD82F06004C6D6F /* client_387298564538-597auvuhbatu7umcqmka514tme1qf4ul.apps.googleusercontent.com.plist */; };
+		048613591CD83473004C6D6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048613581CD83473004C6D6F /* GoogleService-Info.plist */; };
+		0486135A1CD83483004C6D6F /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 048613581CD83473004C6D6F /* GoogleService-Info.plist */; };
 		04FC19431CD82C4000B3A1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC19421CD82C4000B3A1D9 /* AppDelegate.swift */; };
 		04FC19461CD82C4000B3A1D9 /* MTHS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04FC19441CD82C4000B3A1D9 /* MTHS.xcdatamodeld */; };
 		04FC19481CD82C4000B3A1D9 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC19471CD82C4000B3A1D9 /* MasterViewController.swift */; };
@@ -19,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		048613501CD82F06004C6D6F /* client_387298564538-597auvuhbatu7umcqmka514tme1qf4ul.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_387298564538-597auvuhbatu7umcqmka514tme1qf4ul.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		048613531CD830E3004C6D6F /* MTHS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTHS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		048613581CD83473004C6D6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04FC193F1CD82C4000B3A1D9 /* MTHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FC19421CD82C4000B3A1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FC19451CD82C4000B3A1D9 /* MTHS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTHS.xcdatamodel; sourceTree = "<group>"; };
@@ -50,7 +51,7 @@
 		0486134F1CD82EED004C6D6F /* GoogleSigninFiles */ = {
 			isa = PBXGroup;
 			children = (
-				048613501CD82F06004C6D6F /* client_387298564538-597auvuhbatu7umcqmka514tme1qf4ul.apps.googleusercontent.com.plist */,
+				048613581CD83473004C6D6F /* GoogleService-Info.plist */,
 				048613521CD830AE004C6D6F /* TempFiles */,
 			);
 			name = GoogleSigninFiles;
@@ -177,9 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FC19521CD82C4000B3A1D9 /* LaunchScreen.storyboard in Resources */,
+				048613591CD83473004C6D6F /* GoogleService-Info.plist in Resources */,
 				04FC194F1CD82C4000B3A1D9 /* Assets.xcassets in Resources */,
 				04FC194D1CD82C4000B3A1D9 /* Main.storyboard in Resources */,
-				048613511CD82F06004C6D6F /* client_387298564538-597auvuhbatu7umcqmka514tme1qf4ul.apps.googleusercontent.com.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0486135A1CD83483004C6D6F /* GoogleService-Info.plist in Sources */,
 				04FC19431CD82C4000B3A1D9 /* AppDelegate.swift in Sources */,
 				04FC19461CD82C4000B3A1D9 /* MTHS.xcdatamodeld in Sources */,
 				04FC19481CD82C4000B3A1D9 /* MasterViewController.swift in Sources */,

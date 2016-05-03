@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, GIDSignInUIDelegate {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
@@ -32,8 +32,46 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Google Signin
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        var configureError: NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        
+        if configureError != nil {
+            print(configureError)
+        }
+        
+        
+        //GIDSignIn.sharedInstance().delegate = self
+        
+        let button = GIDSignInButton(frame: CGRectMake(0, 0, 100, 100))
+        button.center = view.center
+        
+        view.addSubview(button)
+        
+        
+        
         self.configureView()
     }
+    
+    // Present a view that prompts the user to sign in with Google
+    func signIn(signIn: GIDSignIn!,
+                presentViewController viewController: UIViewController!) {
+        self.presentViewController(viewController, animated: true, completion: nil)
+    }
+    
+    // Dismiss the "Sign in with Google" view
+    func signIn(signIn: GIDSignIn!,
+                dismissViewController viewController: UIViewController!) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+//    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
+//        print(user.profile.email)
+//        print(user.profile.imageURLWithDimension(400))
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

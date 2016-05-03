@@ -56,6 +56,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             let familyName = user.profile.familyName
             let email = user.profile.email
             // ...
+            
+            print (email)
         } else {
             print("\(error.localizedDescription)")
         }
