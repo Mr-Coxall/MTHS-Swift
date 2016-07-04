@@ -142,7 +142,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="sUj-Zm-gJ4" kind="showDetail" id="Wei-8U-RbF"/>
+                                            <segue destination="HHm-LD-KF7" kind="showDetail" id="jOd-PO-0et"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="XEt-tj-ZMj" style="IBUITableViewCellStyleDefault" id="Oqw-r3-AeZ">
@@ -205,7 +205,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="hJX-RA-sNe" kind="showDetail" id="mHX-dg-LOx"/>
+                                            <segue destination="vMM-51-Iwd" kind="showDetail" id="XKa-VU-Ctt"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="I5L-7p-XSD" style="IBUITableViewCellStyleDefault" id="xjC-Ze-XUu">
@@ -306,10 +306,10 @@
             </objects>
             <point key="canvasLocation" x="709" y="-630"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="d3f-v7-YFr">
             <objects>
-                <viewController id="SU5-bE-I4y" sceneMemberID="viewController">
+                <viewController id="SU5-bE-I4y" customClass="LoginViewController" customModule="MTHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="98d-3J-TVl"/>
                         <viewControllerLayoutGuide type="bottom" id="2Qh-TN-36d"/>
@@ -336,10 +336,10 @@
             </objects>
             <point key="canvasLocation" x="4108" y="98"/>
         </scene>
-        <!--View Controller-->
+        <!--Tech Help View Controller-->
         <scene sceneID="rLd-Rl-6Pk">
             <objects>
-                <viewController id="HGn-CL-BWo" sceneMemberID="viewController">
+                <viewController id="HGn-CL-BWo" customClass="TechHelpViewController" customModule="MTHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ofU-Ac-19h"/>
                         <viewControllerLayoutGuide type="bottom" id="pef-wf-TSM"/>
@@ -366,10 +366,38 @@
             </objects>
             <point key="canvasLocation" x="3437" y="98"/>
         </scene>
-        <!--View Controller-->
+        <!--My Fees Table View Controller-->
+        <scene sceneID="Tjg-vc-w3A">
+            <objects>
+                <tableViewController id="vMM-51-Iwd" customClass="MyFeesTableViewController" customModule="MTHS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cFs-ym-5eH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gdo-rh-WMv">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gdo-rh-WMv" id="ycd-9L-oPM">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vMM-51-Iwd" id="uf7-Hf-6IQ"/>
+                            <outlet property="delegate" destination="vMM-51-Iwd" id="dnS-d0-cIh"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbi-GF-Xlv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1391" y="129"/>
+        </scene>
+        <!--School Timetable View Controller-->
         <scene sceneID="iwN-3W-fGk">
             <objects>
-                <viewController id="ngB-Lt-Umc" sceneMemberID="viewController">
+                <viewController id="ngB-Lt-Umc" customClass="SchoolTimetableViewController" customModule="MTHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dl9-eZ-V9O"/>
                         <viewControllerLayoutGuide type="bottom" id="ZDy-ig-35G"/>
@@ -396,40 +424,38 @@
             </objects>
             <point key="canvasLocation" x="2058" y="98"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="HEW-rh-bf4">
+        <!--My Schedule Table View Controller-->
+        <scene sceneID="qeg-xs-yg5">
             <objects>
-                <viewController id="hJX-RA-sNe" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fh5-ZA-njx"/>
-                        <viewControllerLayoutGuide type="bottom" id="sAz-r8-scI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="r8L-iQ-qA7">
+                <tableViewController id="HHm-LD-KF7" customClass="MyScheduleTableViewController" customModule="MTHS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1Fc-Jy-hlE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Fees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx0-sA-Ro7">
-                                <rect key="frame" x="268" y="289" width="65" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="hx0-sA-Ro7" firstAttribute="centerY" secondItem="r8L-iQ-qA7" secondAttribute="centerY" id="GIn-mc-DRc"/>
-                            <constraint firstItem="hx0-sA-Ro7" firstAttribute="centerX" secondItem="r8L-iQ-qA7" secondAttribute="centerX" id="rEg-1k-aQI"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i3l-yu-l1i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="86z-JI-1sE">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="86z-JI-1sE" id="vm9-Xm-QXM">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HHm-LD-KF7" id="niD-Y2-FTf"/>
+                            <outlet property="delegate" destination="HHm-LD-KF7" id="chR-JF-ZSP"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o2I-lX-yq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1391" y="98"/>
+            <point key="canvasLocation" x="2745" y="-630"/>
         </scene>
-        <!--View Controller-->
+        <!--My Student Card View Controller-->
         <scene sceneID="8Rh-9g-RX5">
             <objects>
-                <viewController id="Mrf-sa-7dJ" sceneMemberID="viewController">
+                <viewController id="Mrf-sa-7dJ" customClass="MyStudentCardViewController" customModule="MTHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zJR-EI-bQw"/>
                         <viewControllerLayoutGuide type="bottom" id="fEW-UB-e6J"/>
@@ -456,40 +482,10 @@
             </objects>
             <point key="canvasLocation" x="3437" y="-630"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="4Jq-IB-dHw">
-            <objects>
-                <viewController id="sUj-Zm-gJ4" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QU5-B3-PM9"/>
-                        <viewControllerLayoutGuide type="bottom" id="cGU-5t-2uY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vT8-St-IpZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEu-lC-tn8">
-                                <rect key="frame" x="250" y="289" width="100" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="tEu-lC-tn8" firstAttribute="centerY" secondItem="vT8-St-IpZ" secondAttribute="centerY" id="cFJ-gq-oqw"/>
-                            <constraint firstItem="tEu-lC-tn8" firstAttribute="centerX" secondItem="vT8-St-IpZ" secondAttribute="centerX" id="jvZ-sL-m4x"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hgA-1e-6kg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2745" y="-630"/>
-        </scene>
-        <!--View Controller-->
+        <!--My Locker View Controller-->
         <scene sceneID="g5J-Hg-Nti">
             <objects>
-                <viewController id="TRV-e5-MPF" sceneMemberID="viewController">
+                <viewController id="TRV-e5-MPF" customClass="MyLockerViewController" customModule="MTHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SsC-Mi-u59"/>
                         <viewControllerLayoutGuide type="bottom" id="gYR-wD-Oku"/>
@@ -516,10 +512,10 @@
             </objects>
             <point key="canvasLocation" x="4108" y="-630"/>
         </scene>
-        <!--View Controller-->
+        <!--School Agenda View Controller-->
         <scene sceneID="1WT-zD-9A1">
             <objects>
-                <viewController id="g9x-Xn-RXp" sceneMemberID="viewController">
+                <viewController id="g9x-Xn-RXp" customClass="SchoolAgendaViewController" customModule="MTHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K33-iI-m1A"/>
                         <viewControllerLayoutGuide type="bottom" id="QjP-uY-7fw"/>
@@ -546,10 +542,10 @@
             </objects>
             <point key="canvasLocation" x="2745" y="98"/>
         </scene>
-        <!--View Controller-->
+        <!--Morning Announcements View Controller-->
         <scene sceneID="Wzb-1f-129">
             <objects>
-                <viewController id="e7b-ml-HMT" sceneMemberID="viewController">
+                <viewController id="e7b-ml-HMT" customClass="MorningAnnouncementsViewController" customModule="MTHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JWa-IB-8b8"/>
                         <viewControllerLayoutGuide type="bottom" id="z16-bT-2rN"/>
@@ -576,10 +572,10 @@
             </objects>
             <point key="canvasLocation" x="1391" y="-630"/>
         </scene>
-        <!--View Controller-->
+        <!--School Calendar View Controller-->
         <scene sceneID="GS6-n3-XuO">
             <objects>
-                <viewController id="VFW-Aa-7DM" sceneMemberID="viewController">
+                <viewController id="VFW-Aa-7DM" customClass="SchoolCalendarViewController" customModule="MTHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1os-f7-QhW"/>
                         <viewControllerLayoutGuide type="bottom" id="m3w-wE-LQk"/>
