@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04327A2F1D2A0F3E00AE470B /* MorningAnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A2E1D2A0F3E00AE470B /* MorningAnnouncementsViewController.swift */; };
+		04327A311D2A0F6A00AE470B /* SchoolCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A301D2A0F6A00AE470B /* SchoolCalendarViewController.swift */; };
+		04327A331D2A0F9E00AE470B /* MyScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A321D2A0F9E00AE470B /* MyScheduleTableViewController.swift */; };
+		04327A351D2A0FC500AE470B /* MyStudentCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A341D2A0FC500AE470B /* MyStudentCardViewController.swift */; };
+		04327A371D2A0FDC00AE470B /* MyLockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A361D2A0FDC00AE470B /* MyLockerViewController.swift */; };
+		04327A391D2A0FF800AE470B /* MyFeesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A381D2A0FF800AE470B /* MyFeesTableViewController.swift */; };
+		04327A3B1D2A101700AE470B /* SchoolTimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A3A1D2A101700AE470B /* SchoolTimetableViewController.swift */; };
+		04327A3D1D2A102F00AE470B /* SchoolAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A3C1D2A102F00AE470B /* SchoolAgendaViewController.swift */; };
+		04327A3F1D2A104200AE470B /* TechHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A3E1D2A104200AE470B /* TechHelpViewController.swift */; };
+		04327A411D2A105400AE470B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A401D2A105400AE470B /* LoginViewController.swift */; };
 		048613591CD83473004C6D6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048613581CD83473004C6D6F /* GoogleService-Info.plist */; };
 		0486135A1CD83483004C6D6F /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 048613581CD83473004C6D6F /* GoogleService-Info.plist */; };
 		04FC19431CD82C4000B3A1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC19421CD82C4000B3A1D9 /* AppDelegate.swift */; };
@@ -20,6 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04327A2E1D2A0F3E00AE470B /* MorningAnnouncementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MorningAnnouncementsViewController.swift; path = tabs/MorningAnnouncementsViewController.swift; sourceTree = "<group>"; };
+		04327A301D2A0F6A00AE470B /* SchoolCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchoolCalendarViewController.swift; path = tabs/SchoolCalendarViewController.swift; sourceTree = "<group>"; };
+		04327A321D2A0F9E00AE470B /* MyScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyScheduleTableViewController.swift; path = tabs/MyScheduleTableViewController.swift; sourceTree = "<group>"; };
+		04327A341D2A0FC500AE470B /* MyStudentCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyStudentCardViewController.swift; path = tabs/MyStudentCardViewController.swift; sourceTree = "<group>"; };
+		04327A361D2A0FDC00AE470B /* MyLockerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyLockerViewController.swift; path = tabs/MyLockerViewController.swift; sourceTree = "<group>"; };
+		04327A381D2A0FF800AE470B /* MyFeesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyFeesTableViewController.swift; path = tabs/MyFeesTableViewController.swift; sourceTree = "<group>"; };
+		04327A3A1D2A101700AE470B /* SchoolTimetableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchoolTimetableViewController.swift; path = tabs/SchoolTimetableViewController.swift; sourceTree = "<group>"; };
+		04327A3C1D2A102F00AE470B /* SchoolAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchoolAgendaViewController.swift; path = tabs/SchoolAgendaViewController.swift; sourceTree = "<group>"; };
+		04327A3E1D2A104200AE470B /* TechHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TechHelpViewController.swift; path = tabs/TechHelpViewController.swift; sourceTree = "<group>"; };
+		04327A401D2A105400AE470B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = tabs/LoginViewController.swift; sourceTree = "<group>"; };
 		048613531CD830E3004C6D6F /* MTHS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTHS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		048613581CD83473004C6D6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04FC193F1CD82C4000B3A1D9 /* MTHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +68,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04327A2D1D2A0EF500AE470B /* tabs */ = {
+			isa = PBXGroup;
+			children = (
+				04327A2E1D2A0F3E00AE470B /* MorningAnnouncementsViewController.swift */,
+				04327A301D2A0F6A00AE470B /* SchoolCalendarViewController.swift */,
+				04327A321D2A0F9E00AE470B /* MyScheduleTableViewController.swift */,
+				04327A341D2A0FC500AE470B /* MyStudentCardViewController.swift */,
+				04327A361D2A0FDC00AE470B /* MyLockerViewController.swift */,
+				04327A381D2A0FF800AE470B /* MyFeesTableViewController.swift */,
+				04327A3A1D2A101700AE470B /* SchoolTimetableViewController.swift */,
+				04327A3C1D2A102F00AE470B /* SchoolAgendaViewController.swift */,
+				04327A3E1D2A104200AE470B /* TechHelpViewController.swift */,
+				04327A401D2A105400AE470B /* LoginViewController.swift */,
+			);
+			name = tabs;
+			sourceTree = "<group>";
+		};
 		0486134F1CD82EED004C6D6F /* GoogleSigninFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +123,7 @@
 		04FC19411CD82C4000B3A1D9 /* MTHS */ = {
 			isa = PBXGroup;
 			children = (
+				04327A2D1D2A0EF500AE470B /* tabs */,
 				048613531CD830E3004C6D6F /* MTHS-Bridging-Header.h */,
 				04FC19421CD82C4000B3A1D9 /* AppDelegate.swift */,
 				04FC19471CD82C4000B3A1D9 /* MasterViewController.swift */,
@@ -240,10 +278,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04327A351D2A0FC500AE470B /* MyStudentCardViewController.swift in Sources */,
+				04327A331D2A0F9E00AE470B /* MyScheduleTableViewController.swift in Sources */,
+				04327A371D2A0FDC00AE470B /* MyLockerViewController.swift in Sources */,
+				04327A411D2A105400AE470B /* LoginViewController.swift in Sources */,
 				0486135A1CD83483004C6D6F /* GoogleService-Info.plist in Sources */,
 				04FC19431CD82C4000B3A1D9 /* AppDelegate.swift in Sources */,
 				04FC19461CD82C4000B3A1D9 /* MTHS.xcdatamodeld in Sources */,
+				04327A3D1D2A102F00AE470B /* SchoolAgendaViewController.swift in Sources */,
 				04FC19481CD82C4000B3A1D9 /* MasterViewController.swift in Sources */,
+				04327A2F1D2A0F3E00AE470B /* MorningAnnouncementsViewController.swift in Sources */,
+				04327A3B1D2A101700AE470B /* SchoolTimetableViewController.swift in Sources */,
+				04327A311D2A0F6A00AE470B /* SchoolCalendarViewController.swift in Sources */,
+				04327A3F1D2A104200AE470B /* TechHelpViewController.swift in Sources */,
+				04327A391D2A0FF800AE470B /* MyFeesTableViewController.swift in Sources */,
 				04FC194A1CD82C4000B3A1D9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
