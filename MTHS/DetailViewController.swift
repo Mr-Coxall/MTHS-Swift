@@ -11,7 +11,7 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    @IBOutlet weak var detailedViewControllerWebView: UIWebView!
 
     var detailItem: AnyObject? {
         didSet {
@@ -33,8 +33,11 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // load morning announcements
+        let url = NSURL (string: "https://mother-teresa-hs.blogspot.ca/?m=1");
+        let requestObj = NSURLRequest(URL: url!);
+        detailedViewControllerWebView.loadRequest(requestObj);
 
-        
         self.configureView()
     }
 
