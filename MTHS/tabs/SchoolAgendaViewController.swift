@@ -10,10 +10,17 @@ import UIKit
 
 class SchoolAgendaViewController: UIViewController {
 
+    @IBOutlet weak var schoolAgendaViewController: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // load school timetable
+        let url = NSBundle.mainBundle().URLForResource("Student Handbook", withExtension:"pdf")
+        let requestObj = NSURLRequest(URL: url!);
+        schoolAgendaViewController.loadRequest(requestObj);
     }
 
     override func didReceiveMemoryWarning() {

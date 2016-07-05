@@ -21,6 +21,7 @@
 		046264751D2B47F00089095F /* fre3of9x.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046264731D2B47F00089095F /* fre3of9x.ttf */; };
 		048613591CD83473004C6D6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048613581CD83473004C6D6F /* GoogleService-Info.plist */; };
 		0486135A1CD83483004C6D6F /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 048613581CD83473004C6D6F /* GoogleService-Info.plist */; };
+		04C1C90F1D2B606D007DD84E /* Student Handbook.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C90E1D2B606D007DD84E /* Student Handbook.pdf */; };
 		04FC19431CD82C4000B3A1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC19421CD82C4000B3A1D9 /* AppDelegate.swift */; };
 		04FC19461CD82C4000B3A1D9 /* MTHS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04FC19441CD82C4000B3A1D9 /* MTHS.xcdatamodeld */; };
 		04FC19481CD82C4000B3A1D9 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC19471CD82C4000B3A1D9 /* MasterViewController.swift */; };
@@ -46,6 +47,7 @@
 		046264731D2B47F00089095F /* fre3of9x.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fre3of9x.ttf; sourceTree = "<group>"; };
 		048613531CD830E3004C6D6F /* MTHS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTHS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		048613581CD83473004C6D6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04C1C90E1D2B606D007DD84E /* Student Handbook.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Student Handbook.pdf"; sourceTree = "<group>"; };
 		04FC193F1CD82C4000B3A1D9 /* MTHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FC19421CD82C4000B3A1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FC19451CD82C4000B3A1D9 /* MTHS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTHS.xcdatamodel; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		046264711D2B47E10089095F /* files */ = {
 			isa = PBXGroup;
 			children = (
+				04C1C90E1D2B606D007DD84E /* Student Handbook.pdf */,
 				046264721D2B47F00089095F /* School Timetables.html */,
 				046264731D2B47F00089095F /* fre3of9x.ttf */,
 			);
@@ -227,6 +230,7 @@
 				048613591CD83473004C6D6F /* GoogleService-Info.plist in Resources */,
 				04FC194F1CD82C4000B3A1D9 /* Assets.xcassets in Resources */,
 				046264751D2B47F00089095F /* fre3of9x.ttf in Resources */,
+				04C1C90F1D2B606D007DD84E /* Student Handbook.pdf in Resources */,
 				04FC194D1CD82C4000B3A1D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

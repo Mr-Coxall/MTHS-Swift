@@ -515,19 +515,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Agenda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqb-2E-DNc">
-                                <rect key="frame" x="242" y="289" width="116" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5T-iT-1MW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yqb-2E-DNc" firstAttribute="centerX" secondItem="ol3-LH-h4c" secondAttribute="centerX" id="MnG-RH-CnJ"/>
-                            <constraint firstItem="yqb-2E-DNc" firstAttribute="centerY" secondItem="ol3-LH-h4c" secondAttribute="centerY" id="hYs-QI-v9i"/>
+                            <constraint firstItem="b5T-iT-1MW" firstAttribute="top" secondItem="ol3-LH-h4c" secondAttribute="top" id="960-aN-lrL"/>
+                            <constraint firstItem="b5T-iT-1MW" firstAttribute="bottom" secondItem="QjP-uY-7fw" secondAttribute="top" id="Glv-Mj-AQc"/>
+                            <constraint firstItem="b5T-iT-1MW" firstAttribute="leading" secondItem="ol3-LH-h4c" secondAttribute="leading" id="QG8-Gw-Lty"/>
+                            <constraint firstAttribute="trailing" secondItem="b5T-iT-1MW" secondAttribute="trailing" id="d34-gW-6wx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="schoolAgendaViewController" destination="b5T-iT-1MW" id="Qll-XQ-5R6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9f-q6-O2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
