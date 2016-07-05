@@ -17,6 +17,8 @@
 		04327A3D1D2A102F00AE470B /* SchoolAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A3C1D2A102F00AE470B /* SchoolAgendaViewController.swift */; };
 		04327A3F1D2A104200AE470B /* TechHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A3E1D2A104200AE470B /* TechHelpViewController.swift */; };
 		04327A411D2A105400AE470B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04327A401D2A105400AE470B /* LoginViewController.swift */; };
+		046264741D2B47F00089095F /* School Timetables.html in Resources */ = {isa = PBXBuildFile; fileRef = 046264721D2B47F00089095F /* School Timetables.html */; };
+		046264751D2B47F00089095F /* fre3of9x.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046264731D2B47F00089095F /* fre3of9x.ttf */; };
 		048613591CD83473004C6D6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048613581CD83473004C6D6F /* GoogleService-Info.plist */; };
 		0486135A1CD83483004C6D6F /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 048613581CD83473004C6D6F /* GoogleService-Info.plist */; };
 		04FC19431CD82C4000B3A1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC19421CD82C4000B3A1D9 /* AppDelegate.swift */; };
@@ -40,6 +42,8 @@
 		04327A3C1D2A102F00AE470B /* SchoolAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchoolAgendaViewController.swift; path = tabs/SchoolAgendaViewController.swift; sourceTree = "<group>"; };
 		04327A3E1D2A104200AE470B /* TechHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TechHelpViewController.swift; path = tabs/TechHelpViewController.swift; sourceTree = "<group>"; };
 		04327A401D2A105400AE470B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = tabs/LoginViewController.swift; sourceTree = "<group>"; };
+		046264721D2B47F00089095F /* School Timetables.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "School Timetables.html"; sourceTree = "<group>"; };
+		046264731D2B47F00089095F /* fre3of9x.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fre3of9x.ttf; sourceTree = "<group>"; };
 		048613531CD830E3004C6D6F /* MTHS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTHS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		048613581CD83473004C6D6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04FC193F1CD82C4000B3A1D9 /* MTHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,20 +89,21 @@
 			name = tabs;
 			sourceTree = "<group>";
 		};
+		046264711D2B47E10089095F /* files */ = {
+			isa = PBXGroup;
+			children = (
+				046264721D2B47F00089095F /* School Timetables.html */,
+				046264731D2B47F00089095F /* fre3of9x.ttf */,
+			);
+			name = files;
+			sourceTree = "<group>";
+		};
 		0486134F1CD82EED004C6D6F /* GoogleSigninFiles */ = {
 			isa = PBXGroup;
 			children = (
 				048613581CD83473004C6D6F /* GoogleService-Info.plist */,
-				048613521CD830AE004C6D6F /* TempFiles */,
 			);
 			name = GoogleSigninFiles;
-			sourceTree = "<group>";
-		};
-		048613521CD830AE004C6D6F /* TempFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = TempFiles;
 			sourceTree = "<group>";
 		};
 		04FC19361CD82C3F00B3A1D9 = {
@@ -123,6 +128,7 @@
 		04FC19411CD82C4000B3A1D9 /* MTHS */ = {
 			isa = PBXGroup;
 			children = (
+				046264711D2B47E10089095F /* files */,
 				04327A2D1D2A0EF500AE470B /* tabs */,
 				048613531CD830E3004C6D6F /* MTHS-Bridging-Header.h */,
 				04FC19421CD82C4000B3A1D9 /* AppDelegate.swift */,
@@ -217,8 +223,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FC19521CD82C4000B3A1D9 /* LaunchScreen.storyboard in Resources */,
+				046264741D2B47F00089095F /* School Timetables.html in Resources */,
 				048613591CD83473004C6D6F /* GoogleService-Info.plist in Resources */,
 				04FC194F1CD82C4000B3A1D9 /* Assets.xcassets in Resources */,
+				046264751D2B47F00089095F /* fre3of9x.ttf in Resources */,
 				04FC194D1CD82C4000B3A1D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
