@@ -394,19 +394,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Timetable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FY3-WQ-gbI">
-                                <rect key="frame" x="234" y="289" width="133" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPf-ok-zpV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FY3-WQ-gbI" firstAttribute="centerY" secondItem="xS4-oS-6mh" secondAttribute="centerY" id="GpV-u6-Ylk"/>
-                            <constraint firstItem="FY3-WQ-gbI" firstAttribute="centerX" secondItem="xS4-oS-6mh" secondAttribute="centerX" id="hZ5-EF-CUb"/>
+                            <constraint firstItem="wPf-ok-zpV" firstAttribute="bottom" secondItem="ZDy-ig-35G" secondAttribute="top" id="9On-FA-v3j"/>
+                            <constraint firstItem="wPf-ok-zpV" firstAttribute="top" secondItem="xS4-oS-6mh" secondAttribute="top" id="Azk-oN-PKQ"/>
+                            <constraint firstAttribute="trailing" secondItem="wPf-ok-zpV" secondAttribute="trailing" id="Nbh-Kp-f6n"/>
+                            <constraint firstItem="wPf-ok-zpV" firstAttribute="leading" secondItem="xS4-oS-6mh" secondAttribute="leading" id="fAs-Op-HDm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="schoolTimetableViewController" destination="wPf-ok-zpV" id="bU4-jC-KLp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFu-eC-bD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
