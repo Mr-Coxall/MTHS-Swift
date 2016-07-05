@@ -317,19 +317,7 @@
                     <view key="view" contentMode="scaleToFill" id="kc5-Y4-25x">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login / Log Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPA-Aa-yVJ">
-                                <rect key="frame" x="241" y="289" width="118" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="tPA-Aa-yVJ" firstAttribute="centerY" secondItem="kc5-Y4-25x" secondAttribute="centerY" id="Ei8-4p-XQo"/>
-                            <constraint firstItem="tPA-Aa-yVJ" firstAttribute="centerX" secondItem="kc5-Y4-25x" secondAttribute="centerX" id="TVU-W3-rax"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PjS-pS-czf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -587,19 +575,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uda-go-Ole">
-                                <rect key="frame" x="237" y="289" width="126" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8a-7s-yKx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uda-go-Ole" firstAttribute="centerY" secondItem="0Rc-Ob-UWq" secondAttribute="centerY" id="Bhi-mJ-lQK"/>
-                            <constraint firstItem="uda-go-Ole" firstAttribute="centerX" secondItem="0Rc-Ob-UWq" secondAttribute="centerX" id="ekF-Ll-nQb"/>
+                            <constraint firstItem="I8a-7s-yKx" firstAttribute="leading" secondItem="0Rc-Ob-UWq" secondAttribute="leading" id="HFq-jC-Ihc"/>
+                            <constraint firstItem="I8a-7s-yKx" firstAttribute="bottom" secondItem="m3w-wE-LQk" secondAttribute="top" id="M95-Gn-Oij"/>
+                            <constraint firstItem="I8a-7s-yKx" firstAttribute="top" secondItem="0Rc-Ob-UWq" secondAttribute="top" id="XVL-vA-NUu"/>
+                            <constraint firstAttribute="trailing" secondItem="I8a-7s-yKx" secondAttribute="trailing" id="nng-m9-j3g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="schoolCalendarViewController" destination="I8a-7s-yKx" id="4RN-Uf-uxg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xf0-hQ-YF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
